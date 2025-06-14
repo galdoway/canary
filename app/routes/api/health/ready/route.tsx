@@ -14,6 +14,7 @@ export function loader({ }: LoaderFunctionArgs) {
   return {
     status: "UP",
     timestamp: new Date().toISOString(),
+    service: process.env.APP_NAME,
     checks: {
       database: {
         status: "UP",

@@ -14,6 +14,7 @@ export function meta() {
 export function loader({ }: LoaderFunctionArgs) {
   return {
     status: "UP",
+    service: process.env?.APP_NAME,
     timestamp: new Date().toISOString()
   }
 }
